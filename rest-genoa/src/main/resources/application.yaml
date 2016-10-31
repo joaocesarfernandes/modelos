@@ -1,0 +1,172 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: rest-genoa
+  datasource:
+    url: jdbc:oracle:thin:@IP AQUI:1521:dwh
+    username: bi_user
+    password: S3t@bi
+    driverClassName: oracle.jdbc.OracleDriver
+    hibernate.dialect: org.hibernate.dialect.Oracle10gDialectlect
+  redis:
+    host: localhost
+    port: 6379
+
+spring.mail.default-encoding: UTF-8
+
+
+---
+
+spring:
+  profiles: compra
+  application:
+    name: genoa-carga
+  datasource:
+    url: jdbc:oracle:thin:@IP AQUI:1521:dwh
+    username: bi_user
+    password: S3t@bi
+    driverClassName: oracle.jdbc.OracleDriver
+    hibernate.dialect: org.hibernate.dialect.Oracle10gDialectlect
+  redis:
+    host: localhost
+    port: 1200
+
+spring.mail.default-encoding: UTF-8
+
+# tempo em millisegundos e dias para carga
+genoa:
+  dias:
+    carga: 1
+  schedule:
+    job: 5 * * * * MON-FRI
+
+---
+
+spring:
+  profiles: faturamento
+  application:
+    name: genoa-carga
+  datasource:
+    url: jdbc:oracle:thin:@IP AQUI:1521:dwh
+    username: bi_user
+    password: S3t@bi
+    driverClassName: oracle.jdbc.OracleDriver
+    hibernate.dialect: org.hibernate.dialect.Oracle10gDialectlect
+  redis:
+    host: localhost
+    port: 1201
+
+spring.mail.default-encoding: UTF-8
+
+# tempo em millisegundos e dias para carga
+genoa:
+  dias:
+    carga: 1
+  schedule:
+    job: 5 * * * * MON-FRI
+
+---
+
+spring:
+  profiles: recebimento
+  application:
+    name: genoa-carga
+  datasource:
+    url: jdbc:oracle:thin:@IP AQUI:1521:dwh
+    username: bi_user
+    password: S3t@bi
+    driverClassName: oracle.jdbc.OracleDriver
+    hibernate.dialect: org.hibernate.dialect.Oracle10gDialectlect
+  redis:
+    host: localhost
+    port: 1202
+
+spring.mail.default-encoding: UTF-8
+
+# tempo em millisegundos e dias para carga
+genoa:
+  dias:
+    carga: 1
+  schedule:
+    job: 5 * * * * MON-FRI
+
+---
+
+spring:
+  profiles: estoque
+  application:
+    name: genoa-carga
+  datasource:
+    url: jdbc:oracle:thin:@IP AQUI:1521:dwh
+    username: bi_user
+    password: S3t@bi
+    driverClassName: oracle.jdbc.OracleDriver
+    hibernate.dialect: org.hibernate.dialect.Oracle10gDialectlect
+  redis:
+    host: localhost
+    port: 1203
+
+spring.mail.default-encoding: UTF-8
+
+# tempo em millisegundos e dias para carga
+genoa:
+  dias:
+    carga: 1
+  schedule:
+    job: 5 * * * * MON-FRI
+
+
+---
+
+spring:
+  profiles: catalogo
+  application:
+    name: genoa-carga
+  datasource:
+    url: jdbc:oracle:thin:@IP AQUI:1521:dwh
+    username: bi_user
+    password: S3t@bi
+    driverClassName: oracle.jdbc.OracleDriver
+    hibernate.dialect: org.hibernate.dialect.Oracle10gDialectlect
+  redis:
+    host: localhost
+    port: 1204
+
+spring.mail.default-encoding: UTF-8
+
+# tempo em millisegundos e dias para carga
+genoa:
+  dias:
+    carga: 1
+  schedule:
+    job: 5 * * * * MON-FRI
+
+
+---
+
+spring:
+  profiles: catalogo-status
+  application:
+    name: genoa-carga
+  datasource:
+    url: jdbc:oracle:thin:@IP AQUI:1521:dwh
+    username: bi_user
+    password: S3t@bi
+    driverClassName: oracle.jdbc.OracleDriver
+    hibernate.dialect: org.hibernate.dialect.Oracle10gDialectlect
+  redis:
+    host: localhost
+    port: 1205
+
+spring.mail.default-encoding: UTF-8
+
+# tempo em millisegundos e dias para carga
+genoa:
+  dias:
+    carga: 1
+  schedule:
+    job: 5 * * * * MON-FRI
+
+
+
