@@ -5,9 +5,11 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { MenuSuperiorComponent } from './componentes/menu-superior/menu-superior.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, MenuSuperiorComponent
   ],
   imports: [
     BrowserModule,
