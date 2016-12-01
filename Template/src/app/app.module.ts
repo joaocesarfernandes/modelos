@@ -6,10 +6,11 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import { MenuSuperiorComponent } from './componentes/menu-superior/menu-superior.component';
+import { MenuSuperiorMensagemComponent } from './componentes/menu-superior/menu-superior-mensagem.component';
 
 @NgModule({
   declarations: [
-    AppComponent, MenuSuperiorComponent
+    AppComponent, MenuSuperiorComponent, MenuSuperiorMensagemComponent
   ],
   imports: [
     BrowserModule,
