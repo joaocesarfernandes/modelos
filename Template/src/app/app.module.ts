@@ -7,10 +7,11 @@ import { AppComponent } from './app.component';
 
 import { MenuSuperiorComponent } from './componentes/menu-superior/menu-superior.component';
 import { MenuSuperiorMensagemComponent } from './componentes/menu-superior/menu-superior-mensagem.component';
+import { ConteudoComponent } from './componentes/conteudo/conteudo.component';
 
 @NgModule({
   declarations: [
-    AppComponent, MenuSuperiorComponent, MenuSuperiorMensagemComponent
+    AppComponent, MenuSuperiorComponent, MenuSuperiorMensagemComponent, ConteudoComponent
   ],
   imports: [
     BrowserModule,
