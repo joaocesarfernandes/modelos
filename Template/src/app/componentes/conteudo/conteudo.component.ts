@@ -11,13 +11,12 @@ import { Usuario } from '../../usuario';
 export class ConteudoComponent {
     springUrl = 'http://localhost:8080/';
     conteudo;
-    sub;
 
     constructor(private _http:Http) { 
-        this.sub = this._http.get(this.springUrl)
-                             .map(res => <Usuario>res.json())
-                             .subscribe(usu => this.conteudo = usu,
-                                        error => console.log(error));
+        this._http.get(this.springUrl)
+                    .map(res => <Usuario>res.json())
+                    .subscribe(usu => this.conteudo = usu,
+                            error => console.log(error));
     }
 
 }
