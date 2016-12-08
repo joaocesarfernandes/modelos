@@ -13,7 +13,7 @@ export class ConteudoComponent {
     conteudo;
 
     constructor(private _http:Http) { 
-        this._http.get(this.springUrl)
+        this._http.get(this.springUrl + "usuarios")
                     .map(res => <Usuario>res.json())
                     .subscribe(usu => this.conteudo = usu,
                             error => console.log(error));
